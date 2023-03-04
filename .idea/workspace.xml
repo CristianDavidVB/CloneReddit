@@ -5,80 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17c2b7be-15d5-4b87-8ef3-83cbc01242ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-categories/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-categories/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-categories/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-categories/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-categories/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-categories/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/ServiceCategoriesApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-categories/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-categories/src/test/java/com/clone/service/categories/ServiceCategoriesApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-comments/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-comments/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-comments/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-comments/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-comments/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-comments/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-comments/src/main/java/com/clone/service/comments/ServiceCommentsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-comments/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-comments/src/test/java/com/clone/service/comments/ServiceCommentsApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-favorites/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-favorites/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-favorites/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-favorites/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-favorites/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-favorites/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-favorites/src/main/java/com/clone/service/favorites/ServiceFavoritesApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-favorites/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-favorites/src/test/java/com/clone/service/favorites/ServiceFavoritesApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-files/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-files/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-files/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-files/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-files/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-files/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-files/src/main/java/com/clone/service/files/ServiceFilesApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-files/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-files/src/test/java/com/clone/service/files/ServiceFilesApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-likes/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-likes/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-likes/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-likes/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-likes/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-likes/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-likes/src/main/java/com/clone/service/likes/ServiceLikesApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-likes/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-likes/src/test/java/com/clone/service/likes/ServiceLikesApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-posts/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-posts/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-posts/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-posts/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-posts/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-posts/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-posts/src/main/java/com/clone/service/posts/ServicePostsApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-posts/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-posts/src/test/java/com/clone/service/posts/ServicePostsApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-users/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-users/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-users/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-users/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-users/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-users/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-users/src/main/java/com/clone/service/users/ServiceUsersApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-users/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-users/src/test/java/com/clone/service/users/ServiceUsersApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/dtos/CategoryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/dtos/SubCategoryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/models/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/models/SubCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/repositories/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/repositories/SubCategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-categories/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-categories/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/ServiceCategoriesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/ServiceCategoriesApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
