@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17c2b7be-15d5-4b87-8ef3-83cbc01242ed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/service-files/src/main/java/com/clone/service/files/controllers/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-files/src/main/java/com/clone/service/files/services/FileServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-comments/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-comments/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-comments/src/main/java/com/clone/service/comments/ServiceCommentsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-comments/src/main/java/com/clone/service/comments/ServiceCommentsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-comments/src/main/java/com/clone/service/comments/controllers/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-comments/src/main/java/com/clone/service/comments/controllers/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-comments/src/main/java/com/clone/service/comments/services/CommentServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-comments/src/main/java/com/clone/service/comments/services/CommentServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-comments/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service-comments/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-files/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-files/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-files/src/main/java/com/clone/service/files/ServiceFilesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-files/src/main/java/com/clone/service/files/ServiceFilesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-files/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service-files/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +57,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ServiceCommentsApplication">
+  <component name="RunManager" selected="Application.ServiceFilesApplication">
     <configuration name="ServiceCategoriesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.clone.service.categories.ServiceCategoriesApplication" />
       <module name="service-categories" />
@@ -97,8 +97,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceFilesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.clone.service.files.ServiceFilesApplication" />
+      <module name="service-files" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.clone.service.files.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ServiceFilesApplication" />
         <item itemvalue="Application.ServiceCommentsApplication" />
         <item itemvalue="Application.ServiceFavoritesApplication" />
         <item itemvalue="Application.ServiceCategoriesApplication" />
