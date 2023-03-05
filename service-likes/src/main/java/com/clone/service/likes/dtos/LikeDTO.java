@@ -8,5 +8,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor @NoArgsConstructor
 public class LikeDTO {
     private Long id;
-    private String like;
+    private Integer number_like = 0;
 }
