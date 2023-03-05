@@ -5,6 +5,6 @@ import com.clone.service.categories.dtos.SubCategoryDTO;
 import java.util.List;
 
 public interface SubCategoryService {
-    List<SubCategoryService> findAll();
+    List<SubCategoryDTO> findAll();
     SubCategoryDTO findById(Long id);
 }
