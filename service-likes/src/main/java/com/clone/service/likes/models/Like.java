@@ -13,5 +13,5 @@ public class Like {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String like;
+     private Integer number_like = 0;
 }
