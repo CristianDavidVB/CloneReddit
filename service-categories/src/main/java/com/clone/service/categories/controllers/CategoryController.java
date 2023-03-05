@@ -16,7 +16,6 @@ public class CategoryController {
     @Autowired
     private CategoryService categoryService;
     @GetMapping
-    public ResponseEntity<List<CategoryDTO>> findAll(){
-        return ResponseEntity.ok(categoryService.findAll());
+    public ResponseEntity<List<CategoryDTO>> findAll(){return ResponseEntity.ok(categoryService.findAll());
     }
 }
