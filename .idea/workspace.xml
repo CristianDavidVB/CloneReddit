@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17c2b7be-15d5-4b87-8ef3-83cbc01242ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/service-posts/src/main/java/com/clone/service/posts/controllers/PostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-posts/src/main/java/com/clone/service/posts/services/PostServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-users/src/main/java/com/clone/service/users/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-users/src/main/java/com/clone/service/users/services/UserServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-posts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-posts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-posts/src/main/java/com/clone/service/posts/ServicePostsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-posts/src/main/java/com/clone/service/posts/ServicePostsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-users/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-users/src/main/java/com/clone/service/users/ServiceUsersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/src/main/java/com/clone/service/users/ServiceUsersApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-users/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,26 +57,13 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ServicePostsApplication">
+  <component name="RunManager" selected="Application.ServiceUsersApplication">
     <configuration name="ServiceCommentsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.clone.service.comments.ServiceCommentsApplication" />
       <module name="service-comments" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.clone.service.comments.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServiceFavoritesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.clone.service.favorites.ServiceFavoritesApplication" />
-      <module name="service-favorites" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.clone.service.favorites.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,13 +110,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceUsersApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.clone.service.users.ServiceUsersApplication" />
+      <module name="service-users" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.clone.service.users.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ServiceUsersApplication" />
         <item itemvalue="Application.ServicePostsApplication" />
         <item itemvalue="Application.ServiceLikesApplication" />
         <item itemvalue="Application.ServiceFilesApplication" />
         <item itemvalue="Application.ServiceCommentsApplication" />
-        <item itemvalue="Application.ServiceFavoritesApplication" />
       </list>
     </recent_temporary>
   </component>
