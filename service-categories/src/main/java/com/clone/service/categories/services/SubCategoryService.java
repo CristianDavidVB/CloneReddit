@@ -7,4 +7,6 @@ import java.util.List;
 public interface SubCategoryService {
     List<SubCategoryDTO> findAll();
     SubCategoryDTO findById(Long id);
+
+    SubCategoryDTO create(SubCategoryDTO subCategoryDTO);
 }

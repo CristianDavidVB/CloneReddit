@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17c2b7be-15d5-4b87-8ef3-83cbc01242ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/service-users/src/main/java/com/clone/service/users/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-users/src/main/java/com/clone/service/users/services/UserServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-users/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-users/src/main/java/com/clone/service/users/ServiceUsersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/src/main/java/com/clone/service/users/ServiceUsersApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-users/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/controllers/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/controllers/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/controllers/SubCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/controllers/SubCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/services/CategoryServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/services/CategoryServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/services/SubCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/services/SubCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/services/SubCategoryServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-categories/src/main/java/com/clone/service/categories/services/SubCategoryServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +57,13 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ServiceUsersApplication">
-    <configuration name="ServiceCommentsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.clone.service.comments.ServiceCommentsApplication" />
-      <module name="service-comments" />
+  <component name="RunManager" selected="Application.ServiceCategoriesApplication">
+    <configuration name="ServiceCategoriesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.clone.service.categories.ServiceCategoriesApplication" />
+      <module name="service-categories" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.clone.service.comments.*" />
+          <option name="PATTERN" value="com.clone.service.categories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ServiceCategoriesApplication" />
         <item itemvalue="Application.ServiceUsersApplication" />
         <item itemvalue="Application.ServicePostsApplication" />
         <item itemvalue="Application.ServiceLikesApplication" />
         <item itemvalue="Application.ServiceFilesApplication" />
-        <item itemvalue="Application.ServiceCommentsApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -143,6 +143,17 @@
       <updated>1677942028357</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

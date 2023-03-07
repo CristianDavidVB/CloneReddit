@@ -29,4 +29,11 @@ public class SubCategoryServiceImp implements SubCategoryService{
     public SubCategoryDTO findById(Long id) {
         return null;
     }
+
+    @Override
+    public SubCategoryDTO create(SubCategoryDTO subCategoryDTO) {
+        SubCategory subCategory = modelMapper.map(subCategoryDTO, SubCategory.class);
+        SubCategory saveSubCategory = subCategoryRepository.save(subCategory);
+        return modelMapper.map(saveSubCategory, SubCategoryDTO.class);
+    }
 }
