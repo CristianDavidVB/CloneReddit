@@ -29,9 +29,13 @@ public class CategoryServiceImp implements CategoryService{
         return null;
     }
 
+    //modificador de acceso(public, private, protected)tipo de retorno, name (parametros)
     @Override
+    // modifi  retorno  nombre del metodo y parametros
     public CategoryDTO create(CategoryDTO categoryDTO) {
-        return null;
+        Category category = modelMapper.map(categoryDTO, Category.class);
+        Category saveCategory = categoryRepository.save(category);
+        return modelMapper.map(saveCategory, CategoryDTO.class);
     }
 
     @Override
