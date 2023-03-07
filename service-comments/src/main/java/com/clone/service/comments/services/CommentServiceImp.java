@@ -29,4 +29,11 @@ public class CommentServiceImp implements CommentService{
     public CommentDTO findById(Long id) {
         return null;
     }
+
+    @Override
+    public  CommentDTO create(CommentDTO commentDTO) {
+        Comment comment = modelMapper.map(commentDTO, Comment.class);
+        Comment saveComment = commentRepository.save(comment);
+        return modelMapper.map(saveComment, CommentDTO.class);
+    }
 }
