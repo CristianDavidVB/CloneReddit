@@ -29,4 +29,11 @@ public class FileServiceImp implements FileService{
     public FileDTO findById(Long id) {
         return null;
     }
+
+    @Override
+    public FileDTO create(FileDTO fileDTO) {
+        File file = modelMapper.map(fileDTO, File.class);
+        File saveFile = fileRepository.save(file);
+        return modelMapper.map(saveFile, FileDTO.class);
+    }
 }
