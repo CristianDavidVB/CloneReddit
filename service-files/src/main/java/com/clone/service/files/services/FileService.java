@@ -11,4 +11,6 @@ import java.util.List;
 public interface FileService {
     List<FileDTO> findAll();
     FileDTO findById(Long id);
+
+    FileDTO create(FileDTO fileDTO);
 }
