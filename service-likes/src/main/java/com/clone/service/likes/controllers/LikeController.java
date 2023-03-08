@@ -4,9 +4,7 @@ import com.clone.service.likes.dtos.LikeDTO;
 import com.clone.service.likes.services.LikeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,6 +16,11 @@ public class LikeController {
     @GetMapping
     public ResponseEntity<List<LikeDTO>> findAll(){
         return ResponseEntity.ok(likeService.findAll());
+    }
+
+    @PostMapping
+    public ResponseEntity<LikeDTO> create(@RequestBody LikeDTO likeDTO){
+        return ResponseEntity.ok(likeService.create(likeDTO));
     }
 }
 

@@ -29,4 +29,11 @@ public class LikeServiceImp implements LikeService{
     public LikeDTO findById(Long id) {
         return null;
     }
+
+    @Override
+    public LikeDTO create(LikeDTO likeDTO) {
+        Like like = modelMapper.map(likeDTO, Like.class);
+        Like saveLike = likeRepository.save(like);
+        return modelMapper.map(saveLike, LikeDTO.class);
+    }
 }
