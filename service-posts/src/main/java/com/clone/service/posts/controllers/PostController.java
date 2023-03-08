@@ -4,9 +4,7 @@ import com.clone.service.posts.dtos.PostDTO;
 import com.clone.service.posts.services.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,4 +18,11 @@ public class PostController {
     public ResponseEntity<List<PostDTO>> findAll(){
         return ResponseEntity.ok(postService.findAll());
     }
+
+    @PostMapping
+    public ResponseEntity<PostDTO> craete(@RequestBody PostDTO postDTO){
+        return ResponseEntity.ok(postService.create(postDTO));
+    }
+
+
 }
