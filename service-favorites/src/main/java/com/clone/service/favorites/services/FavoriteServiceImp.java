@@ -30,4 +30,11 @@ public class FavoriteServiceImp implements FavoriteService {
     public FavoriteDTO findById(Long id) {
         return null;
     }
+
+    @Override
+    public FavoriteDTO create(FavoriteDTO favoriteDTO) {
+        Favorite favorite = modelMapper.map(favoriteDTO, Favorite.class);
+        Favorite saveFavorite = favoriteRepository.save(favorite);
+        return modelMapper.map(saveFavorite, FavoriteDTO.class);
+    }
 }

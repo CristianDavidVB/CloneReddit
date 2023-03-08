@@ -22,7 +22,7 @@ public class CategoryController {
         return ResponseEntity.ok(categoryService.create(categoryDTO));
     }
 
-    /*@DeleteMapping("/api/categories/{id}")
+    /* @DeleteMapping("/api/categories/{id}")
     public void deleteCategory(@PathVariable Long id) {
         categoryService.delete(id);
     } */
