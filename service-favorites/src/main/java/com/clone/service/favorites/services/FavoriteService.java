@@ -7,4 +7,6 @@ import java.util.List;
 public interface FavoriteService {
     List<FavoriteDTO> findAll();
     FavoriteDTO findById(Long id);
+
+    FavoriteDTO create(FavoriteDTO favoriteDTO);
 }
