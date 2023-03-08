@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17c2b7be-15d5-4b87-8ef3-83cbc01242ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/service-likes/src/main/java/com/clone/service/likes/controllers/LikeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-likes/src/main/java/com/clone/service/likes/controllers/LikeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-likes/src/main/java/com/clone/service/likes/services/LikeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-likes/src/main/java/com/clone/service/likes/services/LikeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-likes/src/main/java/com/clone/service/likes/services/LikeServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-likes/src/main/java/com/clone/service/likes/services/LikeServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-posts/src/main/java/com/clone/service/posts/controllers/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-posts/src/main/java/com/clone/service/posts/controllers/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-posts/src/main/java/com/clone/service/posts/services/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-posts/src/main/java/com/clone/service/posts/services/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-posts/src/main/java/com/clone/service/posts/services/PostServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-posts/src/main/java/com/clone/service/posts/services/PostServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,20 +54,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ServiceLikesApplication">
-    <configuration name="ServiceCategoriesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.clone.service.categories.ServiceCategoriesApplication" />
-      <module name="service-categories" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.clone.service.categories.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ServicePostsApplication">
     <configuration name="ServiceCommentsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.clone.service.comments.ServiceCommentsApplication" />
       <module name="service-comments" />
@@ -120,13 +107,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServicePostsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.clone.service.posts.ServicePostsApplication" />
+      <module name="service-posts" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.clone.service.posts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ServicePostsApplication" />
         <item itemvalue="Application.ServiceLikesApplication" />
         <item itemvalue="Application.ServiceFilesApplication" />
         <item itemvalue="Application.ServiceFavoritesApplication" />
         <item itemvalue="Application.ServiceCommentsApplication" />
-        <item itemvalue="Application.ServiceCategoriesApplication" />
       </list>
     </recent_temporary>
   </component>

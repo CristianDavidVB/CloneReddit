@@ -30,4 +30,12 @@ public class PostServiceImp implements PostService{
     public PostDTO findById(Long id) {
         return null;
     }
+
+    @Override
+    public PostDTO create(PostDTO postDTO) {
+        Post post = modelMapper.map(postDTO, Post.class);
+        Post savepost = postRepository.save(post);
+        return modelMapper.map(savepost, PostDTO.class);
+
+    }
 }
