@@ -30,4 +30,12 @@ public class UserServiceImp implements UserService{
     public UserDTO findById(Long id) {
         return null;
     }
+
+    @Override
+    public UserDTO create(UserDTO userDTO){
+        User user = modelMapper.map(userDTO, User.class);
+        User saveUser = userRepository.save(user);
+        return modelMapper.map(saveUser, UserDTO.class);
+
+    }
 }

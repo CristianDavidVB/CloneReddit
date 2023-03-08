@@ -4,9 +4,7 @@ import com.clone.service.users.dtos.UserDTO;
 import com.clone.service.users.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,5 +16,10 @@ public class UserController {
     @GetMapping
     public ResponseEntity<List<UserDTO>>findAll(){
         return ResponseEntity.ok(userService.findAll());
+    }
+
+    @PostMapping
+    public ResponseEntity<UserDTO> create(@RequestBody UserDTO userDTO) {
+        return ResponseEntity.ok(userService.create(userDTO));
     }
 }
