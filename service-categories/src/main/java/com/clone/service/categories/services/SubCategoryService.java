@@ -9,4 +9,6 @@ public interface SubCategoryService {
     SubCategoryDTO findById(Long id);
 
     SubCategoryDTO create(SubCategoryDTO subCategoryDTO);
+
+    void delete(Long id);
 }

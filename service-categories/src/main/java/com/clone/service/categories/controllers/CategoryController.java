@@ -22,8 +22,8 @@ public class CategoryController {
         return ResponseEntity.ok(categoryService.create(categoryDTO));
     }
 
-    /* @DeleteMapping("/api/categories/{id}")
-    public void deleteCategory(@PathVariable Long id) {
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable("id") Long id){
         categoryService.delete(id);
-    } */
+    }
 }
