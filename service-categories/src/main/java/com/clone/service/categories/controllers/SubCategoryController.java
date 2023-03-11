@@ -3,6 +3,7 @@ package com.clone.service.categories.controllers;
 import com.clone.service.categories.dtos.SubCategoryDTO;
 import com.clone.service.categories.services.SubCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,9 +19,20 @@ public class SubCategoryController {
         return  ResponseEntity.ok(subCategoryService.findAll());
     }
 
+   @GetMapping("/{id}")
+   public ResponseEntity<SubCategoryDTO> findById(@PathVariable("id") Long id){
+        return ResponseEntity.ok(subCategoryService.findById(id));
+   }
+
     @PostMapping
     public ResponseEntity<SubCategoryDTO>create(@RequestBody SubCategoryDTO subCategoryDTO){
-        return ResponseEntity.ok(subCategoryService.create(subCategoryDTO));
+        return ResponseEntity.status(HttpStatus.CREATED).body(subCategoryService.create(subCategoryDTO));
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<SubCategoryDTO> update(@PathVariable("id") Long id,
+                                                 @RequestBody SubCategoryDTO subCategoryDTO) {
+        return ResponseEntity.ok(subCategoryService.update(id, subCategoryDTO));
     }
 
     @DeleteMapping("/{id}")

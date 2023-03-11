@@ -3,6 +3,7 @@ package com.clone.service.categories.services;
 import com.clone.service.categories.dtos.CategoryDTO;
 import com.clone.service.categories.models.Category;
 import com.clone.service.categories.repositories.CategoryRepository;
+import jakarta.persistence.EntityNotFoundException;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,7 +27,9 @@ public class CategoryServiceImp implements CategoryService{
 
     @Override
     public CategoryDTO findById(Long id) {
-        return null;
+    Category category = categoryRepository.findById(id)
+            .orElseThrow(() -> new EntityNotFoundException("Category not found with id" + id));
+        return modelMapper.map(category, CategoryDTO.class);
     }
 
     //modificador de acceso(public, private, protected)tipo de retorno, name (parametros)
@@ -40,11 +43,16 @@ public class CategoryServiceImp implements CategoryService{
 
     @Override
     public CategoryDTO update(Long id, CategoryDTO categoryDTO) {
-        return null;
+        Category category = categoryRepository.getReferenceById(id);
+        category.setName(categoryDTO.getName());
+        category.setIcon(categoryDTO.getIcon());
+        Category updateCategory = categoryRepository.save(category);
+        return modelMapper.map(updateCategory, CategoryDTO.class);
     }
 
     @Override
     public void delete(Long id) {
         categoryRepository.deleteById(id);
     }
+
 }
