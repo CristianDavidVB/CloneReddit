@@ -22,4 +22,8 @@ public class SubCategoryController {
     public ResponseEntity<SubCategoryDTO>create(@RequestBody SubCategoryDTO subCategoryDTO){
         return ResponseEntity.ok(subCategoryService.create(subCategoryDTO));
     }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable("id")Long id) {subCategoryService.delete(id);
+    }
 }

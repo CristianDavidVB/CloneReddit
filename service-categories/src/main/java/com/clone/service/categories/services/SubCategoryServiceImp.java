@@ -36,4 +36,8 @@ public class SubCategoryServiceImp implements SubCategoryService{
         SubCategory saveSubCategory = subCategoryRepository.save(subCategory);
         return modelMapper.map(saveSubCategory, SubCategoryDTO.class);
     }
+    @Override
+    public void delete(Long id) {
+        subCategoryRepository.deleteById(id);
+    }
 }
