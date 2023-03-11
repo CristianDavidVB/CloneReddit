@@ -16,13 +16,12 @@ public class SubCategoryServiceImp implements SubCategoryService{
     @Autowired
     private SubCategoryRepository subCategoryRepository;
 
-    @Autowired
-    private ModelMapper modelMapper;
     @Override
     public List<SubCategoryDTO> findAll() {
         List<SubCategory> subCategories = subCategoryRepository.findAll();
         return subCategories.stream()
-                .map(subCategory -> modelMapper.map(subCategory, SubCategoryDTO.class))
+                //.map(subCategory -> modelMapper.map(subCategory, SubCategoryDTO.class))
+                .map(this::convertToDTO)
                 .collect(Collectors.toList());
     }
 
@@ -30,14 +29,14 @@ public class SubCategoryServiceImp implements SubCategoryService{
     public SubCategoryDTO findById(Long id) {
         SubCategory subCategory = subCategoryRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Subcategorie not found with by id" + id));
-        return modelMapper.map(subCategory, SubCategoryDTO.class);
+        return convertToDTO(subCategory);
     }
 
     @Override
     public SubCategoryDTO create(SubCategoryDTO subCategoryDTO) {
-        SubCategory subCategory = modelMapper.map(subCategoryDTO, SubCategory.class);
+        SubCategory subCategory = convertToEntity(subCategoryDTO);
         SubCategory saveSubCategory = subCategoryRepository.save(subCategory);
-        return modelMapper.map(saveSubCategory, SubCategoryDTO.class);
+        return convertToDTO(saveSubCategory);
     }
 
    @Override
@@ -45,11 +44,25 @@ public class SubCategoryServiceImp implements SubCategoryService{
         SubCategory subCategory = subCategoryRepository.getReferenceById(id);
         subCategory.setName(subCategoryDTO.getName());
         SubCategory updateSubCategory = subCategoryRepository.save(subCategory);
-        return modelMapper.map(updateSubCategory, SubCategoryDTO.class);
+        return convertToDTO(updateSubCategory);
    }
 
     @Override
     public void delete(Long id) {
         subCategoryRepository.deleteById(id);
+    }
+
+    public SubCategoryDTO convertToDTO(SubCategory subCategory){
+        SubCategoryDTO subCategoryDTO = new SubCategoryDTO();
+        subCategoryDTO.setId(subCategory.getId());
+        subCategoryDTO.setName(subCategory.getName());
+        return subCategoryDTO;
+    }
+
+    public SubCategory convertToEntity(SubCategoryDTO subCategoryDTO){
+        SubCategory subCategory = new SubCategory();
+        subCategory.setId(subCategoryDTO.getId());
+        subCategory.setName(subCategoryDTO.getName());
+        return  subCategory;
     }
 }
