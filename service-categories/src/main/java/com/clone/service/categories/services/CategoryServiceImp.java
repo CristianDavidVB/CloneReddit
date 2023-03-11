@@ -16,12 +16,11 @@ public class CategoryServiceImp implements CategoryService{
     @Autowired
     private CategoryRepository categoryRepository;
 
-    @Autowired ModelMapper modelMapper;
     @Override
     public List<CategoryDTO> findAll() {
         List<Category> categories = categoryRepository.findAll();
         return categories.stream()
-                .map(category -> modelMapper.map(category, CategoryDTO.class))
+                .map(this::convertToDTO)
                 .collect(Collectors.toList());
     }
 
@@ -29,16 +28,16 @@ public class CategoryServiceImp implements CategoryService{
     public CategoryDTO findById(Long id) {
     Category category = categoryRepository.findById(id)
             .orElseThrow(() -> new EntityNotFoundException("Category not found with id" + id));
-        return modelMapper.map(category, CategoryDTO.class);
+        return convertToDTO(category);
     }
 
     //modificador de acceso(public, private, protected)tipo de retorno, name (parametros)
     @Override
     // modifi  retorno  nombre del metodo y parametros
     public CategoryDTO create(CategoryDTO categoryDTO) {
-        Category category = modelMapper.map(categoryDTO, Category.class);
+        Category category = converToEntity(categoryDTO);
         Category saveCategory = categoryRepository.save(category);
-        return modelMapper.map(saveCategory, CategoryDTO.class);
+        return convertToDTO(saveCategory);
     }
 
     @Override
@@ -47,12 +46,28 @@ public class CategoryServiceImp implements CategoryService{
         category.setName(categoryDTO.getName());
         category.setIcon(categoryDTO.getIcon());
         Category updateCategory = categoryRepository.save(category);
-        return modelMapper.map(updateCategory, CategoryDTO.class);
+        return convertToDTO(updateCategory);
     }
 
     @Override
     public void delete(Long id) {
         categoryRepository.deleteById(id);
+    }
+
+    private CategoryDTO convertToDTO(Category category){
+        CategoryDTO categoryDTO = new CategoryDTO();
+        categoryDTO.setId(category.getId());
+        categoryDTO.setName(category.getName());
+        categoryDTO.setIcon(category.getIcon());
+        return categoryDTO;
+    }
+
+    private Category converToEntity(CategoryDTO categoryDTO){
+        Category category = new Category();
+        category.setId(categoryDTO.getId());
+        category.setName(categoryDTO.getName());
+        category.setIcon(categoryDTO.getIcon());
+        return category;
     }
 
 }
