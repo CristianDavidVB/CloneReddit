@@ -9,4 +9,8 @@ public interface FavoriteService {
     FavoriteDTO findById(Long id);
 
     FavoriteDTO create(FavoriteDTO favoriteDTO);
+
+    FavoriteDTO update(Long id, FavoriteDTO favoriteDTO);
+
+    void delete(Long id);
 }
