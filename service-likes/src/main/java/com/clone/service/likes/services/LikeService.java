@@ -9,4 +9,8 @@ public interface LikeService {
     LikeDTO findById(Long id);
 
     LikeDTO create(LikeDTO likeDTO);
+
+    LikeDTO update(Long id, LikeDTO likeDTO);
+
+    void delete(Long id);
 }
