@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17c2b7be-15d5-4b87-8ef3-83cbc01242ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/service-users/src/main/java/com/clone/service/users/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/src/main/java/com/clone/service/users/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-users/src/main/java/com/clone/service/users/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/src/main/java/com/clone/service/users/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-users/src/main/java/com/clone/service/users/services/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-users/src/main/java/com/clone/service/users/services/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-comments/src/main/java/com/clone/service/comments/controllers/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-comments/src/main/java/com/clone/service/comments/controllers/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-comments/src/main/java/com/clone/service/comments/services/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-comments/src/main/java/com/clone/service/comments/services/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-comments/src/main/java/com/clone/service/comments/services/CommentServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-comments/src/main/java/com/clone/service/comments/services/CommentServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +55,13 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ServiceUsersApplication">
-    <configuration name="ServiceFavoritesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.clone.service.favorites.ServiceFavoritesApplication" />
-      <module name="service-favorites" />
+  <component name="RunManager" selected="Application.ServiceCommentsApplication">
+    <configuration name="ServiceCommentsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.clone.service.comments.ServiceCommentsApplication" />
+      <module name="service-comments" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.clone.service.favorites.*" />
+          <option name="PATTERN" value="com.clone.service.comments.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ServiceCommentsApplication" />
         <item itemvalue="Application.ServiceUsersApplication" />
         <item itemvalue="Application.ServicePostsApplication" />
         <item itemvalue="Application.ServiceLikesApplication" />
         <item itemvalue="Application.ServiceFilesApplication" />
-        <item itemvalue="Application.ServiceFavoritesApplication" />
       </list>
     </recent_temporary>
   </component>
