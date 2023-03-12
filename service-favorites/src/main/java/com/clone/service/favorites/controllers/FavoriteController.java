@@ -19,8 +19,22 @@ public class FavoriteController {
         return  ResponseEntity.ok(favoriteService.findAll());
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<FavoriteDTO> findById(@PathVariable("id") Long id) {
+        return ResponseEntity.ok(favoriteService.findById(id));
+    }
+
     @PostMapping
     public ResponseEntity<FavoriteDTO> create(@RequestBody FavoriteDTO favoriteDTO){
         return ResponseEntity.ok(favoriteService.create(favoriteDTO));
     }
+
+    @PutMapping
+    public  ResponseEntity<FavoriteDTO> update(@PathVariable("id") Long id,
+                                               @RequestBody FavoriteDTO favoriteDTO){
+        return ResponseEntity.ok(favoriteService.update(id, favoriteDTO));
+    }
+
+  @DeleteMapping("/{id}")
+    public void delete(@PathVariable("id")Long id) {favoriteService.delete(id); }
 }
