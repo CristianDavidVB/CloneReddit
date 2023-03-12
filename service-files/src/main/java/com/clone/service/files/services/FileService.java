@@ -13,4 +13,8 @@ public interface FileService {
     FileDTO findById(Long id);
 
     FileDTO create(FileDTO fileDTO);
+
+    FileDTO update(Long id, FileDTO fileDTO);
+
+    void delete(Long id);
 }
