@@ -3,7 +3,7 @@ package com.clone.service.users.services;
 import com.clone.service.users.dtos.UserDTO;
 import com.clone.service.users.models.User;
 import com.clone.service.users.repositories.UserRepository;
-import org.modelmapper.ModelMapper;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,27 +15,61 @@ public class UserServiceImp implements UserService{
     @Autowired
     private UserRepository userRepository;
 
-    @Autowired
-    private ModelMapper modelMapper;
-
     @Override
     public List<UserDTO> findAll() {
         List<User> users = userRepository.findAll();
         return users.stream()
-                .map(user -> modelMapper.map(user, UserDTO.class))
+                .map(this::convertToDTO)
                 .collect(Collectors.toList());
     }
 
     @Override
     public UserDTO findById(Long id) {
-        return null;
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("User not found with id" + id));
+        return convertToDTO(user);
     }
 
     @Override
     public UserDTO create(UserDTO userDTO){
-        User user = modelMapper.map(userDTO, User.class);
+        User user = convertToEntity(userDTO);
         User saveUser = userRepository.save(user);
-        return modelMapper.map(saveUser, UserDTO.class);
+        return convertToDTO(saveUser);
+    }
 
+    @Override
+    public UserDTO update(Long id, UserDTO userDTO) {
+        User user = userRepository.getReferenceById(id);
+        user.setEmail(userDTO.getEmail());
+        user.setUsername(userDTO.getUsername());
+        user.setPassword(userDTO.getPassword());
+        user.setPhoto(userDTO.getPhoto());
+        User updateUser = userRepository.save(user);
+        return convertToDTO(updateUser);
+    }
+
+    @Override
+    public void delete(Long id){
+        userRepository.deleteById(id);
+    }
+
+    private UserDTO convertToDTO(User user){
+        UserDTO userDTO = new UserDTO();
+        userDTO.setId(user.getId());
+        userDTO.setEmail(user.getEmail());
+        userDTO.setUsername(user.getUsername());
+        userDTO.setPassword(user.getPassword());
+        userDTO.setPhoto(user.getPhoto());
+        return userDTO;
+    }
+
+    private User convertToEntity(UserDTO userDTO){
+        User user = new User();
+        user.setId(userDTO.getId());
+        user.setEmail(userDTO.getEmail());
+        user.setUsername(userDTO.getUsername());
+        user.setPassword(userDTO.getPassword());
+        user.setPhoto(userDTO.getPhoto());
+        return user;
     }
 }
